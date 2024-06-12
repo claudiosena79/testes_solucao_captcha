@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Human Verification</title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AGKRMSvc8zqL7o6NccAtGr8AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMNuXQA5w7285L90PWAgEQgDsiC/Ix7g4W9u4VIdG0H5hHNOn40ODXoGLCfHVtWaOyD/8/UnJAzJIEEj52sfg4MsZOBUkwM8BSdTYXGw==",
+          "iv":"CgAF1zFBLGAAABZo",
+          "context":"41BqT6bXISJylZOEIF9Q5omAbK6qMhVczG3mxK/w4X/5y1XDzuWbz73taGjlv9VV5mfb6Smrde9qA1UYDnD6tz9r/kh01M1B9GRhD8mIl2DJcxEHHzdmxwsG1wph8zyJpzSOMQMYJKWVx871TiFDmTiq1BAHprZntCpVhYahnHF98fjg2RWmxci88oAmrAs40go+bKJ3UfYwy6jJHMEAUgvB0GbxG80KZzbPno3UkNKBUvZPmJ20tNaL93JPA8BC5Q5N78f7Ef9GIV9iwYxpx8WW+dHUzZaHtmodGcD7Re+23dbFdbyPTH8qPOdq1zXuQS1oLPsOsxGAjTkyUjEqE9TsgCUeWAg="
+};
+    </script>
+    <script src="https://f9ccb45d13fa.a58ab0ae.sa-east-1.token.awswaf.com/f9ccb45d13fa/e21bb63121a8/7e2ce392545e/challenge.js"></script>
+    <script src="https://f9ccb45d13fa.a58ab0ae.sa-east-1.captcha.awswaf.com/f9ccb45d13fa/e21bb63121a8/7e2ce392545e/captcha.js"></script>
+</head>
+<body>
+    <div id="captcha-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        window.addEventListener("load", function() {
+          const container = document.querySelector("#captcha-container");
+          CaptchaScript.renderCaptcha(container, async (voucher) => {
+              await ChallengeScript.submitCaptcha(voucher);
+              window.location.reload(true);
+          }
+      );
+    });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, you need to verify that you're not a robot by solving a CAPTCHA puzzle.
+         The CAPTCHA puzzle requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>
